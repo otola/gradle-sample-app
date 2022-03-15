@@ -14,7 +14,6 @@ jobs:
   default-pipeline:
     executor: my-custom-executor
     steps:
-      - checkout
       - test-orb/install:
           dl-plateng-deployment-branch: "test"
           kustomize-file-location: "config/envs/test"
