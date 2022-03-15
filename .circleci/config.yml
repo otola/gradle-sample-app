@@ -1,4 +1,3 @@
-version: 2.1
 orbs:
   test-orb: otola/test-orb@0.0.9
 jobs:
