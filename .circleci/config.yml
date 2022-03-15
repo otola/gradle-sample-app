@@ -1,3 +1,5 @@
+version: 2.1
+
 orbs:
   test-orb: otola/test-orb@0.0.9
   gcp-cli: circleci/gcp-cli@2.4.0
