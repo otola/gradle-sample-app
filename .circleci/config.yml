@@ -1,10 +1,15 @@
-version: 2.1
 orbs:
   test-orb: otola/test-orb@0.0.9
-jobs:
-  default-pipeline:
+version: 2.1
+executors:
+  my-custom-executor:
     docker:
       - image: cimg/base:stable
+        environment:
+          app: "onurs-test-app"
+jobs:
+  default-pipeline:
+    executor: my-custom-executor
     steps:
       - checkout
       - test-orb/install:
